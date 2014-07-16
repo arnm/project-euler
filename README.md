@@ -5,6 +5,8 @@ problem set.
 
 ## Disclaimers
 
+I'm not a mathematician.
+
 These solutions are in no way the "best" solutions but they should be
 readable and easy to understand.
 
