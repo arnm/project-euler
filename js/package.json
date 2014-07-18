@@ -7,6 +7,6 @@
   "author": "Alexei Nunez",
   "license": "ISC",
   "dependencies": {
-    "lodash-node": "^2.4.1"
+    "mori": "^0.2.9"
   }
 }

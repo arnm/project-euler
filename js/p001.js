@@ -5,9 +5,12 @@ get 3, 5, 6 and 9. The sum of these multiples is 23.
 Find the sum of all the multiples of 3 or 5 below 1000.
 */
 
-var ld = require('lodash-node')
+var mr = require('mori');
 
-var multiples = ld.filter(ld.range(1000), function(n) { return n % 3 == 0 || n % 5 == 0 })
-var answer = ld.reduce(multiples, function(x, y) { return x + y })
+function solve() {
+  var multiples = mr.filter(function (n) { return n % 3 === 0 || n % 5 === 0; }, mr.range(1000));
+  var answer = mr.reduce(function (x, y) { return x + y; }, multiples);
+  return answer;
+}
 
-console.log('Answer:', answer)
+console.log('Answer:', solve());
