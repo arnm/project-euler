@@ -13,3 +13,8 @@ readable and easy to understand.
 ### Python Solutions
 
 The Python solutions need to executed with Python 3.
+
+### JavaScript (NodeJS) Solutions
+
+These solutions were written for use in NodeJS with a focus on utilizing
+the [lodash](http://lodash.com) utility library.
