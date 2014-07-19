@@ -9,7 +9,7 @@ var mr = require('mori');
 
 function solve() {
   var multiples = mr.filter(function (n) { return n % 3 === 0 || n % 5 === 0; }, mr.range(1000));
-  var answer = mr.reduce(function (x, y) { return x + y; }, multiples);
+  var answer = mr.reduce(mr.sum, multiples);
   return answer;
 }
 

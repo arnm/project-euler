@@ -1,12 +1,10 @@
 {
   "name": "js",
   "version": "0.0.0",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "",
+  "dependencies": {
+    "mori": "~0.2.9"
   },
   "author": "Alexei Nunez",
-  "license": "ISC",
-  "dependencies": {
-    "mori": "^0.2.9"
-  }
+  "license": "BSD-2-Clause"
 }
