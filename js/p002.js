@@ -11,8 +11,8 @@ four million, find the sum of the even-valued terms.
 var mr = require('mori');
 
 // memoized fibonacci
-var fibonacci = (function() {
- var cache = mr.hash_map(0, 1, 1, 2);
+var fibonacci = (function () {
+  var cache = mr.hash_map(0, 1, 1, 2);
 
   function fib(n) {
     var value = mr.get(cache, n);
@@ -25,10 +25,12 @@ var fibonacci = (function() {
   }
 
   return fib;
-})();
+}());
 
 function solve() {
-  var fib_nums = mr.take_while(function(n) { return n < 4000000; }, mr.map(fibonacci, mr.range()));
+  var fib_nums = mr.take_while(function (n) {
+    return n < 4000000;
+  }, mr.map(fibonacci, mr.range()));
   return mr.reduce(mr.sum, mr.filter(mr.is_even, fib_nums));
 }
 

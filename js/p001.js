@@ -8,7 +8,9 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 var mr = require('mori');
 
 function solve() {
-  var multiples = mr.filter(function (n) { return n % 3 === 0 || n % 5 === 0; }, mr.range(1000));
+  var multiples = mr.filter(function (n) {
+    return n % 3 === 0 || n % 5 === 0;
+  }, mr.range(1000));
   var answer = mr.reduce(mr.sum, multiples);
   return answer;
 }
